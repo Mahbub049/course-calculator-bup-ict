@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Course Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Course Calculator</h1>
+    <form id="courseForm">
+      <label for="classTestMarks1Exam">Class Test 1 Exam Marks:</label>
+      <input type="number" id="classTestMarks1Exam" required>
+      <label for="classTestMarks1Obtained">Class Test 1 Obtained Marks:</label>
+      <input type="number" id="classTestMarks1Obtained" required>
+
+      <label for="classTestMarks2Exam">Class Test 2 Exam Marks:</label>
+      <input type="number" id="classTestMarks2Exam" required>
+      <label for="classTestMarks2Obtained">Class Test 2 Obtained Marks:</label>
+      <input type="number" id="classTestMarks2Obtained" required>
+
+      <label for="classTestMarks3Exam">Class Test 3 Exam Marks:</label>
+      <input type="number" id="classTestMarks3Exam" required>
+      <label for="classTestMarks3Obtained">Class Test 3 Obtained Marks:</label>
+      <input type="number" id="classTestMarks3Obtained" required>
+
+      <label for="classTestMarks4Exam">Class Test 4 Exam Marks:</label>
+      <input type="number" id="classTestMarks4Exam" required>
+      <label for="classTestMarks4Obtained">Class Test 4 Obtained Marks:</label>
+      <input type="number" id="classTestMarks4Obtained" required>
+
+      <label for="midTermMarks">Mid Term Marks (out of 20):</label>
+      <input type="number" id="midTermMarks" required>
+
+      <label for="assignmentMarks">Assignment Marks (out of 10):</label>
+      <input type="number" id="assignmentMarks" required>
+
+      <label for="totalClasses">Total Classes Commenced:</label>
+      <input type="number" id="totalClasses" required>
+
+      <label for="attendedClasses">Attended Classes:</label>
+      <input type="number" id="attendedClasses" required>
+
+      <button type="button" onclick="calculateMarks()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
