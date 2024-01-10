@@ -46,6 +46,9 @@ function calculateMarks() {
     // Calculate required marks to get A+
     const requiredMarks = Math.max(0, 80 - totalMarks);
   
+    // Calculate required marks to pass
+    const requiredPassMarks = Math.max(0, 40 - totalMarks);
+
     // Display the result
     const resultDiv = document.getElementById('result');
     resultDiv.innerHTML = `
@@ -56,6 +59,7 @@ function calculateMarks() {
       <hr>
       <p><strong>Total Marks:</strong> ${totalMarks.toFixed(2)}</p>
       <p><strong>Required Marks to get A+:</strong> ${requiredMarks.toFixed(2)}</p>
+      <p><strong>Required Marks to Pass:</strong> ${requiredPassMarks.toFixed(2)}</p>
     `;
   }
   
