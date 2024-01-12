@@ -44,10 +44,10 @@ function calculateMarks() {
     const totalMarks = averageClassTestMarks + midTermMarks + assignmentMarks + attendanceMarks;
   
     // Calculate required marks to get A+
-    const requiredMarks = Math.max(0, 80 - totalMarks);
+    const requiredMarks = Math.max(0, 80 - totalMarks)*2;
   
     // Calculate required marks to pass
-    const requiredPassMarks = Math.max(0, 40 - totalMarks);
+    const requiredPassMarks = Math.max(0, 40 - totalMarks)*2;
 
     // Display the result
     const resultDiv = document.getElementById('result');
